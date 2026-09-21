@@ -1,12 +1,12 @@
 {
   "name": "@likec4/playground",
-  "version": "1.59.3",
+  "version": "1.59.4",
   "private": true,
   "scripts": {
     "generate": "tsx scripts/generate.mts",
-    "dev": "vite dev",
+    "dev": "node init && vite dev",
     "typecheck": "tsc --build --verbose",
-    "build": "vite build",
+    "build": "node init && vite build",
     "preview": "vite preview",
     "clean": "pnpm rimraf dist lib node_modules/.vite",
     "wrangler:deploy": "CLOUDFLARE_ENV=production wrangler deploy",

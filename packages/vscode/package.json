@@ -1,6 +1,6 @@
 {
   "name": "likec4-vscode",
-  "version": "1.59.3",
+  "version": "1.59.4",
   "private": true,
   "pricing": "Free",
   "publisher": "likec4",
@@ -29,8 +29,8 @@
     "generate": "vscode-ext-gen --scope likec4 --output src/meta.ts",
     "open-web": "turbo run build && pnpx @vscode/test-web --open-devtools --extensionDevelopmentPath=. ../likec4/dev",
     "typecheck": "tsc -b --verbose",
-    "build:turbo": "turbo run build --log-prefix=none --log-order=grouped",
-    "build": "tsdown",
+    "build:turbo": "node init && turbo run build --log-prefix=none --log-order=grouped",
+    "build": "node init && tsdown",
     "lint": "run -T eslint src/ --fix",
     "clean": "pnpm rimraf lib contrib dist src/generated",
     "package-vsix": "tsx scripts/package-vsix.mts",

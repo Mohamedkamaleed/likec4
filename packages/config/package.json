@@ -1,6 +1,6 @@
 {
   "name": "@likec4/config",
-  "version": "1.59.3",
+  "version": "1.59.4",
   "license": "MIT",
   "homepage": "https://likec4.dev",
   "author": "Denis Davydkov <denis@davydkov.com>",
@@ -14,7 +14,7 @@
   "scripts": {
     "generate": "tsx --conditions=sources scripts/generate.mts",
     "typecheck": "tsc -b --verbose",
-    "build": "tsdown",
+    "build": "node init && tsdown",
     "lint:package": "pnpx publint ./package.tgz",
     "clean": "likec4ops clean",
     "prepack": "likec4ops prepack",
